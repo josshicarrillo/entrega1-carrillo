@@ -60,7 +60,7 @@ body {
    nav ul {
        display: flex;
        list-style: none;
-       gap: 2rem;
+       gap: 3rem;
        flex-wrap: wrap;
        justify-content: center;
    }
