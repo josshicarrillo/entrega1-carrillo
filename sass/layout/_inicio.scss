@@ -1,8 +1,10 @@
 // HEADER Y NAVEGACIÓN
 
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
 header {
-    background: $gradient-primary;
-    color: $color-white;
+    background: $color-primary;
+    color: $$bg-card;
     padding: $spacing-sm $spacing-lg;
     box-shadow: $shadow-sm;
     position: relative;
