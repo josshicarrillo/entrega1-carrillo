@@ -1,0 +1,53 @@
+// Colores principales
+$color-primary: #ce568e;
+$color-secondary: #9458cc;
+$color-accent: #d63384;
+$color-accent-dark: #b02a6b;
+
+// Colores neutros
+$color-white: #fff;
+$color-black: #333;
+$color-gray-light: #666;
+$color-gray-lighter: #999;
+$color-bg-light: #f3dbed;
+$color-bg-white: #f8f9fa;
+
+// Gradientes
+$gradient-primary: linear-gradient(150deg, $color-primary 0%, $color-secondary 100%);
+$gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$gradient-pink: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+$gradient-red: linear-gradient(135deg, #ff6b6b, #ee5a24);
+$gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+// Espaciado
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
+
+// Border radius
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 15px;
+$radius-xl: 20px;
+$radius-xxl: 25px;
+$radius-full: 50%;
+
+// Transiciones
+$transition-fast: 0.3s;
+$transition-medium: 0.4s;
+$transition-slow: 0.6s;
+
+// Sombras
+$shadow-sm: 0 2px 20px rgba(0, 0, 0, 0.15);
+$shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
