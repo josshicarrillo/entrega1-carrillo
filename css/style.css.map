@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_reset.scss","../sass/layout/_inicio.scss","../sass/utilities/_variables.scss","../sass/utilities/_mixin.scss"],"names":[],"mappings":"AACA;EACI;EACA;EACA;;;ACCJ;EACI;EACA;EACA,kBCGa;EDFb,OCDU;ECPV;EACI;EACA","file":"style.css"}

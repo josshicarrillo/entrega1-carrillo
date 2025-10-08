@@ -1,56 +1,5 @@
-@mixin flex-center {
+@mixin flex{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-@mixin transition($properties...) {
-    transition: $properties $transition-fast ease;
-}
-
-@mixin gradient-text($gradient) {
-    background: $gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-@mixin card-hover {
-    transition: all $transition-fast ease;
-
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: $shadow-hover;
-    }
-}
-
-@mixin overlay-gradient($opacity: 0.8) {
-    background: linear-gradient(45deg,
-            rgba(102, 126, 234, $opacity),
-            rgba(118, 75, 162, $opacity));
-}
-
-@mixin responsive($breakpoint) {
-    @if $breakpoint ==mobile {
-        @media (max-width: $breakpoint-mobile) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint ==tablet {
-        @media (max-width: $breakpoint-tablet) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint ==desktop {
-        @media (max-width: $breakpoint-desktop) {
-            @content;
-        }
-    }
+        flex-direction: column;
+        min-height: 100vh;
 }

@@ -1,46 +1,53 @@
-// --- Colores ---
+// Colores principales
 $color-primary: #ce568e;
 $color-secondary: #9458cc;
-$color-accent-pink: #d63384;
-$color-accent-pink-hover: #b02a6b;
-$color-accent-purple: #667eea;
-$color-accent-purple-dark: #764ba2;
-$color-offer: #ff6b6b;
-$color-offer-dark: #ee5a24;
+$color-accent: #d63384;
+$color-accent-dark: #b02a6b;
 
-$color-text-primary: #333;
-$color-text-secondary: #666;
-$color-text-tertiary: #444;
-$color-text-light: #fff;
-$color-text-special: #2c3e50;
-$color-text-subtle: #5a6c7d;
+// Colores neutros
+$color-white: #fff;
+$color-black: #333;
+$color-gray-light: #666;
+$color-gray-light-: #999;
+$color-bg-light: #f3dbed;
+$color-bg-white: #f8f9fa;
 
-// --- Fondos ---
-$bg-body: #f3dbed;
-$bg-card: #fff;
-$bg-contact: #f9f9f9;
-$bg-nosotros: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+// Gradientes
+$gradient-primary: linear-gradient(150deg, $color-primary 0%, $color-secondary 100%);
+$gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$gradient-pink: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+$gradient-red: linear-gradient(135deg, #ff6b6b, #ee5a24);
+$gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
-// --- Gradientes ---
-$gradient-header: linear-gradient(150deg, $color-primary 0%, $color-secondary 100%);
-$gradient-badge: linear-gradient(135deg, $color-accent-purple, $color-accent-purple-dark);
-$gradient-badge-offer: linear-gradient(135deg, $color-offer, $color-offer-dark);
-$gradient-button: linear-gradient(135deg, $color-accent-purple, $color-accent-purple-dark);
-$gradient-button-hover: linear-gradient(135deg, $color-accent-purple-dark, $color-accent-purple);
-$gradient-overlay: linear-gradient(45deg, rgba($color-accent-purple, 0.3) 0%, rgba($color-accent-purple-dark, 0.3) 100%);
-$gradient-text: linear-gradient(45deg, $color-accent-purple, $color-accent-purple-dark);
+// Espaciado
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+$spacing-xxl: 4rem;
 
-// --- Fuentes ---
-$font-primary: Arial, Helvetica, sans-serif;
-$font-secondary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$font-heading: 'Georgia', serif;
+// Border radius
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 15px;
+$radius-xl: 20px;
+$radius-xxl: 25px;
+$radius-full: 50%;
 
-// --- Sombras ---
-$shadow-light: 0 2px 20px rgba(0, 0, 0, 0.15);
-$shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.1);
-$shadow-strong: 0 20px 40px rgba(0, 0, 0, 0.15);
-$shadow-hover: 0 25px 50px rgba(0, 0, 0, 0.2);
+// Transiciones
+$transition-fast: 0.3s;
+$transition-medium: 0.4s;
+$transition-slow: 0.6s;
 
-// --- Transiciones ---
-$transition-fast: all 0.3s ease;
-$transition-medium: all 0.4s ease;
+// Sombras
+$shadow-sm: 0 2px 20px rgba(0, 0, 0, 0.15);
+$shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
