@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins, sans-serif;
   line-height: 1.6;
   background-color: #f3dbed;
   color: #333;
@@ -15,10 +15,11 @@ body {
 }
 
 header {
-  background: linear-gradient(150deg, #ce568e, 0%, #9458cc, 100%);
-  color: white;
+  background-color: linear-gradient(150deg, #ce568e 0%, #9458cc 100%);
+  color: #fff;
+  text-align: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 20px;
+  box-shadow: 0 2px 20px #333;
 }
 header .logo-section {
   display: flex;
@@ -74,6 +75,71 @@ header nav ul li a::before {
 header nav ul li a::before:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   left: 0;
+}
+header nav ul li a::before:hover ::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  header nav ul li a::before:hover ::after header {
+    padding: 1rem;
+    text-align: center;
+  }
+  header nav ul li a::before:hover ::after header .logo-section {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  header nav ul li a::before:hover ::after header .logo-section img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+main h2 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
+}
+main p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+main div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+main div img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+}
+main div img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px black;
 }
 
 /*# sourceMappingURL=style.css.map */
