@@ -3,3 +3,35 @@
     flex-direction: column;
     min-height: 100vh;
 }
+@mixin badge {
+    padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        z-index: 2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+}
+@mixin descuento {
+    padding: 0.3rem 0.6rem;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+}
+@mixin btn {
+    
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+}
+@mixin card{
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+    
+}

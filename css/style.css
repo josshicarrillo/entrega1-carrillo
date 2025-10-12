@@ -8,7 +8,7 @@ body {
   font-family: poppins, sans-serif;
   line-height: 1.6;
   background-color: #f3dbed;
-  color: #333;
+  color: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -159,9 +159,165 @@ main div img:hover {
   position: relative;
   cursor: pointer;
 }
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .producto-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-container {
+  position: relative;
+  overflow: hidden;
+}
+.imagen-container .producto-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.imagen-container .producto-card img:hover img {
+  transform: scale(1.1);
+}
+.imagen-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.oferta {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.producto-info {
+  padding: 1rem;
+  text-align: center;
+}
+.producto-info h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.producto-info p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.precio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.precio-actual {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.precio-anterior {
+  font-size: 1.2rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.descuento {
+  background: #ff6b6b;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn-producto {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.btn-producto:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.nosotros-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 60px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.contenido-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.seccion-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.seccion-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.seccion-card::before:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */
