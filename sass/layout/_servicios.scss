@@ -1,0 +1,68 @@
+@use "../utilities/variables" as *;
+//Mixins
+@use "../utilities/mixin" as *;
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $color-black;
+    margin-bottom: 1rem;
+    background: $gradient-purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.servicio-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    &:hover {
+            transform: scale(1.05);
+        }
+    }
+&:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+}
+.servicio-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+.servicio-title {
+    font-size: 1.3rem;
+    color: $color-black;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.servicio-description {
+    color: $color-gray-light;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.overlay {
+    @include overlay;
+}

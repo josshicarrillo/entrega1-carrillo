@@ -6,8 +6,10 @@
 
 // Estilos de galeria
 
-@use "./layout/-galeria.scss" as *;
-
+@use "./layout/galeria" as *;
 //Estilos de nosotros
 
-@use "./layout/-nosotros.scss" as *;
+@use "./layout/nosotros" as *;
+
+//Estilos de servicios
+@use "./layout/servicios" as *;
