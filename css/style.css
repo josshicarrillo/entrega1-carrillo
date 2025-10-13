@@ -515,5 +515,72 @@ h2 {
     transform: translateY(0);
   }
 }
+.contacto {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacto label {
+  font-weight: bold;
+  color: #444;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contacto input .contacto input:focus, .contacto textarea .contacto input:focus,
+.contacto input .contacto textarea:focus,
+.contacto textarea .contacto textarea:focus {
+  border-color: #d63384;
+  outline: none;
+  box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+}
+
+.btn-enviar {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-enviar:hover {
+  background: #b02a6b;
+}
+
+footer {
+  background: linear-gradient(150deg, #ce568e 0%, #9458cc 100%);
+  text-align: center;
+  padding: 15px 10px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+footer a :hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */

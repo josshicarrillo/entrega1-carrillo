@@ -2,3 +2,64 @@
 //Mixins
 @use "../utilities/mixin" as *;
 
+.contacto {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:$color-black;
+        }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+label {
+    font-weight: bold;
+    color: #444;
+}
+}
+.contacto input,
+.contacto textarea {
+    @include textarea;
+.contacto input &:focus,
+.contacto textarea &:focus {
+    border-color: $color-accent;
+    outline: none;
+    box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+    }
+}
+
+.btn-enviar {
+    background: #d63384;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+&:hover {
+        background: #b02a6b;
+    }
+    }
+
+// FOOTER
+footer {
+    background: $gradient-primary;
+    text-align: center;
+    padding: 15px 10px;
+a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px;
+ & :hover {
+        text-decoration: underline;
+    }
+    }
+}
