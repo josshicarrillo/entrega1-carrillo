@@ -108,7 +108,8 @@ header nav ul li a::before {
 main {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 60px 60px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 main h2 {
   font-size: 3rem;

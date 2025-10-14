@@ -26,6 +26,7 @@ header {
     gap: 15px;
     margin-bottom: 1rem;
 img{
+
     width: 80px;
     height: 80px;
     object-fit: contain;
@@ -109,7 +110,8 @@ left: 0;
 main {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 60px 60px;
+    background: $gradient-bg;
 h2 {
     font-size: 3rem;
         color: $color-black;
